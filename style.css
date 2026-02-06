@@ -1,0 +1,99 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f4f5;
+  color: #2f2f33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container principal */
+.container {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+/* Títulos */
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #3a3a3f;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #55555a;
+}
+
+/* Labels */
+label {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #d6d6db;
+  background: #fafafa;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #8a8a92;
+  background: #ffffff;
+}
+
+/* Botões */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #4b4b52;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 5px;
+}
+
+button:hover {
+  background: #2f2f33;
+}
+
+/* Área de resultados */
+.resultado {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #f1f1f3;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Linha separadora */
+hr {
+  margin: 25px 0;
+  border: none;
+  border-top: 1px solid #e4e4e7;
+}
