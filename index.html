@@ -7,13 +7,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<div class="container">
     <h1>Parquímetro</h1>
-    <h2>Digite os horários de entrada e de saída (Formato => HH:mm): </h2>
+    <h2>Digite os horários de entrada e de saída para calcular o tempo de permanência (Formato => HH:mm):</h2>
 
-    <input type="number" id="horaEntrada" placeholder="Hora de entrada"> 
-    <input type="number" id="horaSaida" placeholder="Hora da saída">
-    <button>Calcular Preço</button>
+    <input type="time" id="entrada" placeholder="Horário de entrada"> 
+    <input type="time" id="saida" placeholder="Horário da saída">
 
-    <script src="script.js"></script>
+    <button onclick="calcularTempo()">Calcular Tempo</button>
+
+    <h3 id="infoTempo"></h3>
+    <h3 id="infoValor"></h3>
+
+    <hr>
+
+    <h2> Realizar Pagamento </h2>
+
+    <div>
+        <label>Valor Pago (R$)</label>
+        <input type="number" id="valorPago" step="0.01" min="0">
+    </div>
+
+    <br>
+
+    <button onclick="realizarPagamento()">Pagar</button>
+
+    <h3 id="resultadoPagamento"></h3>
+
+    </div>
+
+
 </body>
+
+<script src="script.js"></script>
+
 </html>
